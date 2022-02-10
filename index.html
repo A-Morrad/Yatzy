@@ -1,0 +1,97 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <script src="yatzyDice.js" defer></script>
+        <title>YATZY!</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="images">
+                
+                    <input type="checkbox" class="cb" alt="0" id = "in1">
+                    <label for="in1" class="lbl"> <img src="die1.png" alt="" id="img1"></label>
+
+                <input type="checkbox" class="cb" alt="1" id = "in2">
+                <label for="in2" class="lbl"><img src="die2.png" alt="" id="img2"></label>
+
+                <input type="checkbox" class="cb" alt="2" id = "in3">
+                <label for="in3" class="lbl"><img src="die3.png" alt="" id="img3"></label>
+
+                <input type="checkbox" class="cb" alt="3" id = "in4">
+                <label for="in4" class="lbl"><img src="die4.png" alt="" id="img4"></label>
+
+                <input type="checkbox" class="cb" alt="4" id = "in5">
+                <label for="in5" class="lbl"><img src="die5.png" alt="" id="img5"></label>
+
+               
+            </div>
+            <label class="lbl_turn" for=""><a id="turn">TURN:</a></label>
+            <button class="btn" id="rollBtn">ROLL</button>
+        </div>
+
+        <div class = "ting">
+            <div class = "info">
+                <div class = "p1">1-s</div>
+                <div class = "p2">2-s</div>
+                <div class = "p3">3-s</div>
+                <div class = "p4">4-s</div>
+                <div class = "p5">5-s</div>
+                <div class = "p6">6-s</div>                    
+                <div class = "p7">One Pair</div>
+                <div class = "p8">Two Pairs</div>
+                <div class = "p9">Three Same</div>
+                <div class = "p10">Four Same</div>
+                <div class = "p11">Full House</div>
+                <div class = "p12">Small Straight</div>
+                <div class = "p13">Large Straight</div>
+                <div class = "p14">Chance</div>
+                <div class = "p15">Yatzy</div>
+                
+            </div>
+            <div class = "felter">
+
+                <button id = "p1" >0</button>
+                <button id = "p2" >0</button>
+                <button id = "p3" >0</button>
+                <button id = "p4" >0</button>
+                <button id = "p5" >0</button>
+                <button id = "p6" >0</button>
+                <button id = "p7" >0</button>
+                <button id = "p8" >0</button>
+                <button id = "p9" >0</button>
+                <button id = "p10" >0</button>
+                <button id = "p11" >0</button>
+                <button id = "p12" >0</button>
+                <button id = "p13" >0</button>
+                <button id = "p14" >0</button>
+                <button id = "p15" >0</button>
+
+                
+            </div>
+            
+        </div>
+
+        <div class = extra1>
+            <div class = "p16">SUM</div>
+            <div class = "p17">BONUS</div>
+            <div class = "p18">TOTAL</div>
+        </div>
+
+        <div class = extra11>
+            <div id = "p16">0</div>
+            <div id = "p17">0</div>
+            <div id = "p18">0</div>
+            <!--<input type="text" id = "p16">
+            <input type="text" id = "p17">
+            <input type="text" id = "p18">-->
+        </div>
+
+    </body>
+</html>

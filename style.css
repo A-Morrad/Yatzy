@@ -1,0 +1,163 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+    padding: 15px;
+    margin: 0 auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-image: url("backg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "top top top top top"
+                         "b1 b2 b3 b4 b5";
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.ting{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    padding: 10px;
+}
+
+.felter{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    padding: 10px;
+    text-align: right;
+    
+}
+
+.extra1{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 5px;
+    text-align: center;
+}
+
+.extra11{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 10px;
+    text-align: center;
+}
+
+#p16,#p17,#p18{
+    border-style: dotted;
+}
+
+
+
+.images{
+    grid-area: top;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-bottom: 1em;
+}
+
+#img1,#img2,#img3,#img4,#img5{
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.lbl{
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+.cb {
+    display: none;
+}
+
+
+.lbl_turn{
+    grid-area: b2;
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+    text-decoration: underline 2px;
+    letter-spacing: 1px;
+   
+}
+
+
+
+.btn{
+    margin: 0 auto;
+    grid-area: b4;
+    width: 100px;
+    height: 40px;
+    background: #1AAB8A;
+    color:#fff;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+
+.btn:hover{
+    background: #fff;
+    color:#1AAB8A;
+}
+
+.btn:before,.btn:after{
+    content:'';
+    position: absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+}
+
+.btn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+.btn:hover:before,.btn:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+/*BTN effects: https://dev.to/gscode/20-css-buttons-4cni*/
+
+#p1,#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11,#p12,#p13,#p14,#p15{
+    cursor: pointer;
+    margin: 3px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
